@@ -9,3 +9,15 @@ With my dear ACM-ICPC teammates
 
 - YungHsienGod (2015)
     xavier13540, andrew704
+
+# How to compile the codebook
+
+- Install Latex
+- Install Fonts (Linux Libertine G, Source Code Pro)
+- Simply 'make' in the folder 'pdf'
+
+# Todo List
+
+- Resolve the problem of blank contents
+- Convex Hull (the old version is broken T_T)
+- FFT
