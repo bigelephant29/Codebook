@@ -18,6 +18,5 @@ With my dear ACM-ICPC teammates
 
 # Todo List
 
-- Resolve the problem of blank contents
 - Convex Hull (the old version is broken T_T)
 - FFT
