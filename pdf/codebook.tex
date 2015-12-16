@@ -16,15 +16,14 @@
 \usepackage{enumerate}
 \usepackage{titlesec}
 \usepackage{amsmath}
-\usepackage[switch]{lineno}
 
 %\usepackage[T1]{fontenc}
 \usepackage{amsmath, courier, listings, fancyhdr, graphicx}
 \topmargin=0pt
 \headsep=5pt
-\textheight=780pt
+\textheight=735pt
 \footskip=0pt
-\voffset=-40pt
+\voffset=-50pt
 \textwidth=545pt
 \marginparsep=0pt
 \marginparwidth=0pt
@@ -55,7 +54,7 @@
 \lstset{											% Code顯示
 language=C++,										% the language of the code
 basicstyle=\footnotesize\ttfamily, 						% the size of the fonts that are used for the code
-%numbers=left,										% where to put the line-numbers
+numbers=left,										% where to put the line-numbers
 numberstyle=\footnotesize,						% the size of the fonts that are used for the line-numbers
 stepnumber=1,										% the step between two line-numbers. If it's 1, each line  will be numbered
 numbersep=5pt,										% how far the line-numbers are from the code
@@ -85,9 +84,7 @@ stringstyle=\itshape\color{Green4},
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\contentsname}{Contents} 
 \newcommand{\addcode}[1]{
-    \begin{linenumbers}
     \lstinputlisting{#1}
-    \end{linenumbers}
 }
 
 \scriptsize
@@ -103,5 +100,12 @@ stringstyle=\itshape\color{Green4},
 \section{STL}
 \subsection{crope}
 \addcode{../codes/STL/rope.cpp}
+
+\section{Data Structure}
+\subsection{Leftist}
+\addcode{../codes/DS/leftist.cpp}
+\newpage
+\subsection{Treap (split/merge)}
+\addcode{../codes/DS/treap.cpp}
 
 \end{document}
