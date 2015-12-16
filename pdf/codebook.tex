@@ -16,6 +16,7 @@
 \usepackage{enumerate}
 \usepackage{titlesec}
 \usepackage{amsmath}
+\usepackage[switch]{lineno}
 
 %\usepackage[T1]{fontenc}
 \usepackage{amsmath, courier, listings, fancyhdr, graphicx}
@@ -83,6 +84,11 @@ stringstyle=\itshape\color{Green4},
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\contentsname}{Contents} 
+\newcommand{\addcode}[1]{
+    \begin{linenumbers}
+    \lstinputlisting{#1}
+    \end{linenumbers}
+}
 
 \scriptsize
 \tableofcontents
@@ -92,6 +98,10 @@ stringstyle=\itshape\color{Green4},
 
 \section{Basic}
 \subsection{.vimrc}
-\lstinputlisting{../codes/Basic/.vimrc}
+\addcode{../codes/Basic/.vimrc}
+
+\section{STL}
+\subsection{crope}
+\addcode{../codes/STL/rope.cpp}
 
 \end{document}
