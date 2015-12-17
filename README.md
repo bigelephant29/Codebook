@@ -16,7 +16,3 @@ With my dear ACM-ICPC teammates
 - Install Fonts (Linux Libertine G, Source Code Pro)
 - Simply 'make' in the folder 'pdf'
 
-# Todo List
-
-- Convex Hull (the old version is broken T_T)
-- FFT
