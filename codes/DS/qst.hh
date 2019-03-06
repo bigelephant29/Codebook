@@ -63,8 +63,8 @@ public:
     }
     template<typename ...A> Qst(std::vector<T> const &a, A &&...args): Qst(a.data(), a.size(), std::forward<A>(args)...){}
     std::size_t query(std::size_t l, std::size_t r, std::size_t k) const{
-        if(l>r || r>=ra.size() || k>r-l+1){
-            throw std::runtime_error("Exception from Qst::query: Bad Interval\n");
+        if(l>r || r>=ra.size() || !k || k>r-l+1){
+            throw std::runtime_error("Exception from Qst::query: Bad Query\n");
         }
         return si[query_ra(l+1, r+1, k, 1)];
     }
