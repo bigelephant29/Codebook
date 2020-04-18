@@ -31,7 +31,7 @@ template<class T> void sais(T *s, int n, int m, int *sa, int *b=0, int *p=0, boo
 }while(0)
     is(p);
     for(int i=0, j=-1, k=-1; i<=n-1; i++) if((j=r[sa[i]])>=0){
-        int l = (k<0) || memcmp(s+p[j], s+p[k], ((j==n2-1)? (n-p[j]+1): (p[j+1]-p[j]+1))*sizeof(T));
+        int l = (k<0) || memcmp(s+p[j], s+p[k], ((k==n2-1)? (n-p[k]+1): (p[k+1]-p[k]+1))*sizeof(T));
         s2[k=j] = (m2+=l);
     }
     s2[n2] = 0;
